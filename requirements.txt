@@ -64,8 +64,10 @@ networkx==3.6.1
 notebook==7.5.7
 notebook_shim==0.2.4
 numpy==2.4.6
+opencv-python==4.13.0.92
 overrides==7.7.0
 packaging==26.2
+pandas==3.0.3
 pandocfilters==1.5.1
 parso==0.8.7
 pillow==12.2.0
