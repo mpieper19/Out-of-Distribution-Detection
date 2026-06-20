@@ -19,6 +19,7 @@ debugpy==1.8.21
 decorator==5.3.1
 defusedxml==0.7.1
 executing==2.2.1
+faiss-cpu==1.14.3
 fastjsonschema==2.21.2
 filelock==3.29.1
 fonttools==4.63.0
@@ -96,12 +97,13 @@ Send2Trash==2.1.0
 six==1.17.0
 soupsieve==2.8.4
 stack-data==0.6.3
-sympy==1.14.0
+sympy==1.13.1
 terminado==0.18.1
 threadpoolctl==3.6.0
 tinycss2==1.5.1
-torch==2.12.0
-torchvision==0.27.0
+torch==2.5.1+cu121
+torchaudio==2.5.1+cu121
+torchvision==0.20.1+cu121
 tornado==6.5.6
 traitlets==5.15.1
 typing_extensions==4.15.0
