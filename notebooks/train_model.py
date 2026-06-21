@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 
 
 class DenseNet121(nn.Module):
+    """
+    Adapted from https://github.com/arnoweng/CheXNet/blob/master/model.py
+    """
     
     def __init__(self, num_classes):
         super(DenseNet121, self).__init__()
@@ -20,6 +23,9 @@ class DenseNet121(nn.Module):
 
 
 def train_one_epoch(model, training_loader, loss_fn, optimizer, device):
+    """
+    Adapted from https://docs.pytorch.org/tutorials/beginner/introyt/trainingyt.html
+    """
 
     running_loss = 0.
     last_loss = 0.
@@ -52,6 +58,10 @@ def train_one_epoch(model, training_loader, loss_fn, optimizer, device):
 
 
 def train_model(model, num_epochs, training_loader, validation_loader, device, model_name):
+    """
+    Adapted from https://docs.pytorch.org/tutorials/beginner/introyt/trainingyt.html
+    """
+
     model.to(device)
 
     loss_fn = nn.BCEWithLogitsLoss()
